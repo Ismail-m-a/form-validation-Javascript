@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Kontaktlista applikation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/321c549bf7.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="football.png"> <!-- title icon -->
+</head>
+
+<body>
+    <!-- nav title text med icon bild -->
+    <nav>
+        <h1>X <i class="fa-regular fa-futbol"></i> footbolls team kontaktlista applikation </h1>
+    </nav>
+    
+    
+    <div class="container">
+        <!-- Under rubrik -->
+        <h3>Registrera ditt namn och telefonnummer för att bli medlem!</h3> <br>
+        
+        <!-- Registrera förmular -->
+        <div id="form-messages"></div> <!-- Error meddelande för input fält visas här -->
+        <form id="form-list">
+            <div id="register-form">
+                <label for="nameInput"><span style="color:green"><i class="fa-solid fa-user"></i></span> Namn:</label>
+                <input type="text" id="nameInput" placeholder="Ange namn">
+                <label for="telefonInput"><span style="color: green"><i class="fa-solid fa-phone"></i> </span>Telefon:</label>
+                <input type="number" id="telefonInput" placeholder="Ange telefonnummer">
+                <button type="button" id="submitButton">Skapa</button>
+                <button type="button" id="deletebtn">Radera lista</button>
+            </div>
+            <br>
+            <h2>Kontaktlista:</h2> <!--  rubrik för skapande listor -->
+            <div id="list-container">
+                <div id="mylist"></div>
+                <div id="list-messages"></div> <!-- error meddelande för skapade kontakt visas här -->
+
+            </div>
+        </form>
+        
+    </div>
+
+    
+
+    <script src="kontakt.js"></script>
+
+    <footer>  
+        <div class="social"> <!-- Social media iconer -->
+            <p>Kontakta mig på: info@ismail.com eller följ mig på sociala medier.</p>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 Ismail M. Adam. All rights reserved.</p>    
+    </footer>
+
+</body>
+
+</html>

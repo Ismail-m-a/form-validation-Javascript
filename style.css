@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    min-height: 100vh;
+    
+}
+
+nav {
+    text-align: center;
+    background-color:#0082e6;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 55px;
+    cursor: pointer;
+    
+
+}
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2{
+    padding: 0 20px;
+    transform: translateX(-250px);
+    /* margin-right: 500px; */
+}
+#list-container {
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+#mylist{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Stil för error messages */
+.alert {
+    text-align: left;
+    padding: 15px;
+    margin-left: 500px;
+    width: 38%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+}
+
+
+
+
+
+#submitButton{
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color:#0056b3;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+#deletebtn{
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color:#0056b3;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+#submitButton:hover {
+    background-color:green; 
+    color: white;
+}
+#deletebtn:hover {
+    background-color: #8B0000; /* Ny background color när  hover */
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 300px;
+    color: white;
+    background-color: #313a40;
+    border-radius: 2px;
+    position: sticky;
+    bottom: 0;
+}
+
+
+.social { /* sociala media icons */
+    font-size: 17px;
+    display: flex; /* iconer ligger horisontell */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: px;
+    text-decoration: none;
+    gap: 1.5rem;
+}
+
+.social a {
+    color: #eee;
+}
+
+.social a:hover { /* Ändrar iconer färgen när man håller muspekaren */
+    color: #007bff;
+}
+
+/* Använder media query för responsiv för olika skärmar */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        transform: translateX(-30%);
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h2 {
+        transform: translateX(0);
+    }
+
+    .social {
+        font-size: 12px;
+    }
+
+    #submitButton,
+    #deletebtn {
+        width: 100%;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        position: fixed;
+    }
+}
